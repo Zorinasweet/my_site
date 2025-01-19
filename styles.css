@@ -1,0 +1,75 @@
+/* Основные стили для всего сайта */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Стили для заголовка */
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Основной контент */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для секций */
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #35424a;
+}
+
+/* Стили для галереи */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    margin: 10px;
+    border-radius: 5px;
+}
+
+/* Стили для контактов */
+#contact p {
+    margin: 5px 0;
+}
+
+/* Подвал */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #35424a;
+    color: #ffffff;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 600px) {
+    .gallery {
+        flex-direction: column; /* Изменение направления на мобильных устройствах */
+        align-items: center; /* Центрирование изображений */
+    }
+}
